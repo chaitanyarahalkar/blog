@@ -1,0 +1,69 @@
+baseURL: https://blog.rahalkar.xyz/
+languageCode: en-us
+title: Chaitanya Rahalkar's Blog
+theme: "PaperMod"
+
+minify:
+    disableXML: true
+    minifyOutput: true
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+params:
+    # defaultTheme: light
+    # defaultTheme: dark
+    defaultTheme: auto # to switch between dark or light according to browser theme
+    ShowReadingTime: true
+    ShowShareButtons: true
+    ShowBreadCrumbs: true
+    ShowPostNavLinks: true
+    author: Me
+    homeInfoParams:
+        Title: "Hi there \U0001F44B!"
+        Content: Welcome to my blog. 
+
+    socialIcons:
+        - name: twitter
+          url: "https://twitter.com/chairahalkar"
+        - name: github
+          url: "https://github.com/chaitanyarahalkar"
+        - name: dev
+          url: "https://dev.to/chaitanyarahalkar"
+        - name: reddit
+          url: "https://reddit.com/u/chaitanyarahalkar"
+        - name: linkedin
+          url: "https://linkedin.com/in/chaitanyarahalkar"
+        - name: telegram
+          url: "https://t.me/chaitanyarahalkar"
+        - name: keybase
+          url: "https://keybase.io/chairahalkar"
+        - name: website
+          url: "https://rahalkar.xyz"
+        - name: email
+          url: "mailto:cr@gatech.edu"
+
+disableThemeToggle: true
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
+
+menu:
+    main:
+        - identifier: search
+          name: Search
+          url: /search/
+          weight: 10
+        - identifier: tags
+          name: Tags
+          url: /tags/
+          weight: 20
+        - identifier: website
+          name: Personal Website
+          url: https://rahalkar.xyz
+          weight: 30
